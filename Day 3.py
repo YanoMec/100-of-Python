@@ -34,11 +34,12 @@ road = cross_road.lower()
 
 if "right" == road:
     print("You fell into a hole. !!GAME OVER!!")
+  
 else:
-    pass
-print("You've arrived at the Islands port, You have two options.\nSwim or wait for a boat.")
-port = input("Are you going to swim or wait for the boat?\nEnter Swim or Boat")
-option= port.lower()
-
-if "swim" == option:
-    print("You where")  
+    print("You've arrived at the Islands port, You have two options.\nSwim or wait for a boat.")
+    port = input("Are you going to swim or wait for the boat?\nEnter Swim or Boat")
+    option= port.lower()
+    if "swim" == option:
+        print("You where eatting by a shark !!GAME OVER!!")
+    else:    
+        print("You have arrived at a light house with 2 doors")
