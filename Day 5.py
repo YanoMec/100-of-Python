@@ -41,4 +41,3 @@ while(wanted_letters or wanted_numbers or wanted_symbols > 0):
         password += symbols[x]
         wanted_symbols -= 1
 print(password)
-+str(password)
