@@ -24,25 +24,21 @@ wanted_symbols = int(input(f"How many symbols would you like?\n"))
 #     password += symbols[x]
 # print(password)
 
-#loop while (total >0)
-while(wanted_letters + wanted_numbers + wanted_symbols > 0):
+while(wanted_letters or wanted_numbers or wanted_symbols > 0):
     char_type = random.randint(0,2)
-    print("Characters left: " + str(wanted_letters + wanted_numbers + wanted_symbols), "\nchar_type = " + str(char_type))
-    if char_type == 0 and wanted_letters > 0: #for letters if they are wanted
+    if char_type == 0 and wanted_letters > 0: 
         x = random.randint(0, len(letters) - 1)   
         password += letters[x]
         wanted_letters -= 1
-        print("letters minus one")
-    elif char_type == 1 and wanted_numbers > 0: #for numbers if they are wanted
+
+    elif char_type == 1 and wanted_numbers > 0: 
         x = random.randint(0, len(numbers) - 1)   
         password += numbers[x]
         wanted_numbers -= 1
-        print("numbers minus one")
-    elif char_type == 2 and wanted_symbols > 0: #for symbols if they are wanted
+
+    elif char_type == 2 and wanted_symbols > 0: 
         x = random.randint(0, len(symbols) - 1)   
         password += symbols[x]
         wanted_symbols -= 1
-        print("symbols minus one")
-    print("Current Password: " + password)
 print(password)
-    
++str(password)

@@ -40,7 +40,7 @@
 # # 🚨 Don't change the code below 👇
 # print(f"{line1}\n{line2}\n{line3}")
 
-# ----------------------
+# -------------------
 import random
 Rock = '''
      Rock
