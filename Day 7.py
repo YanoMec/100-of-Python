@@ -13,8 +13,11 @@ display = ["_"] * len(chosen_word)
 print(display)
 user_guess = input("Guess a letter?\n").lower()
 
-for letter in chosen_word:
-    if user_guess in chosen_word:
-        print("Right")
-    else:
-        print("Wrong")
+for index in range(len(chosen_word)):
+    if user_guess == chosen_word[index]:
+        display[index] = user_guess
+print(display)
+
+    
+
+    
