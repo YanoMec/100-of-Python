@@ -1,7 +1,17 @@
 #Day 7 - Creating Hang man Game. 
-
 import random
+logo = ''' 
+ _                                             
+| |                                            
+| |__   __ _ _ __   __ _ _ __ ___   __ _ _ __  
+| '_ \ / _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+| | | | (_| | | | | (_| | | | | | | (_| | | | |
+|_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                    __/ |                      
+                   |___/    '''
 
+                                                                    
+                                                                    
 stages = ['''
   +---+
   |   |
@@ -58,7 +68,7 @@ stages = ['''
       |
 =========
 ''']
-
+print(logo)
 end_of_game = False
 word_list = ["ardvark", "baboon", "camel"]
 chosen_word = random.choice(word_list)
@@ -75,7 +85,7 @@ print(f'Pssst, the solution is {chosen_word}.')
 display = []
 for _ in range(word_length):
     display += "_"
-
+print(display)
 while not end_of_game:
     guess = input("Guess a letter: ").lower()
 
@@ -105,4 +115,3 @@ while not end_of_game:
 
     #TODO-3: - print the ASCII art from 'stages' that corresponds to the current number of 'lives' the user has remaining.
     print(stages[lives])
-    
