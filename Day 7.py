@@ -70,8 +70,8 @@ stages = ['''
 print(logo)
 import random
 end_of_game = False
-import word_list
-chosen_word = random.choice(word_list)
+import hangman_words
+chosen_word = random.choice(hangman_words.word_list)
 word_length = len(chosen_word)
 
 #TODO-1: - Create a variable called 'lives' to keep track of the number of lives left. 
