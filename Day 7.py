@@ -1,5 +1,4 @@
 #Day 7 - Creating Hang man Game. 
-import random
 logo = ''' 
  _                                             
 | |                                            
@@ -69,8 +68,9 @@ stages = ['''
 =========
 ''']
 print(logo)
+import random
 end_of_game = False
-word_list = ["ardvark", "baboon", "camel"]
+import word_list
 chosen_word = random.choice(word_list)
 word_length = len(chosen_word)
 
